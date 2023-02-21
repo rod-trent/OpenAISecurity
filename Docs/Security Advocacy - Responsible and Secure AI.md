@@ -22,7 +22,7 @@ Microsoft AI services, such as Azure Cognitive Services and Azure Machine Learni
 
 These are a few of the most glaring things security professionals should be mindful of when using Microsoft AI services. However, it's important to keep in mind that security and privacy requirements can vary depending on the specific use case and industry.
 
-Resources: 
+## Some Resources: 
 
 Azure Cognitive Services Responsible Use of AI Overview: https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/cognitive-services/responsible-use-of-ai-overview.md 
 
