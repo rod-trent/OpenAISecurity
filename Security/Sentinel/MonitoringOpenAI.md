@@ -4,5 +4,5 @@ Actions to monitor: https://rodtrent.com/2z0
 
 Table and designation (KQL):
 <br><br>
-AzureDiagnostics<br><br>
+AzureDiagnostics<br>
 | where ResourceProvider == "MICROSOFT.COGNITIVESERVICES"
