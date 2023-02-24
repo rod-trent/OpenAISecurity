@@ -1,2 +1,2 @@
 # OpenAIWork
-Scripts and Content for working with Open AI
+Scripts and Content for working with Open AI Security
