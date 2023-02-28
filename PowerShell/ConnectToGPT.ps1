@@ -1,4 +1,4 @@
-//This PowerShell script connects to the GPT3 API, asks a question, and retrieves the answer.
+//This PowerShell script connects to the GPT API, asks a question, and retrieves the answer.
 
 //Get your API key here: https://platform.openai.com/account/api-keys
 
