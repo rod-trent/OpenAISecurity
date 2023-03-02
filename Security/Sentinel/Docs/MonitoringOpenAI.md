@@ -14,4 +14,4 @@ AzureActivity<br>
 | where OperationNameValue contains "MICROSOFT.COGNITIVESERVICES"<br>
 
 <br><br>
-<img title="Diag Settings" alt="Diag Settings" src="[https://github.com/rod-trent/OpenAISecurity/blob/main/Security/Sentinel/Docs/openailogs.png]">
+<img title="Diag Settings" alt="Diag Settings" src="https://github.com/rod-trent/OpenAISecurity/blob/main/Security/Sentinel/Docs/openailogs.png">
