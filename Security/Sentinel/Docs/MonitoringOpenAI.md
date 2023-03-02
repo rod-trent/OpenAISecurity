@@ -12,3 +12,6 @@ AzureDiagnostics<br>
 AzureActivity<br>
 | where TimeGenerated >= (24h)<br>
 | where OperationNameValue contains "MICROSOFT.COGNITIVESERVICES"<br>
+
+<br><br>
+<img title="a title" alt="Alt text" src="[/images/boo.svg](https://github.com/rod-trent/OpenAISecurity/blob/main/Security/Sentinel/Docs/openailogs.png)">
