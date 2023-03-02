@@ -8,6 +8,6 @@ AzureDiagnostics<br>
 | where ResourceProvider == "MICROSOFT.COGNITIVESERVICES"
 <br>
 <br>
-AzureActivity
-| where TimeGenerated >= (24h)
-| where OperationNameValue contains "MICROSOFT.COGNITIVESERVICES"
+AzureActivity<br>
+| where TimeGenerated >= (24h)<br>
+| where OperationNameValue contains "MICROSOFT.COGNITIVESERVICES"<br>
