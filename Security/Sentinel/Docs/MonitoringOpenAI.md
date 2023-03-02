@@ -5,6 +5,7 @@ Actions to monitor: https://rodtrent.com/2z0
 Tables and designation (KQL):
 <br><br>
 AzureDiagnostics<br>
+| where TimeGenerated >= (24h)<br>
 | where ResourceProvider == "MICROSOFT.COGNITIVESERVICES"
 <br>
 <br>
