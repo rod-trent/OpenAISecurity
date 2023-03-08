@@ -1,0 +1,4 @@
+//Pending...ChatGPT API Usage
+
+AzureActivity
+| where parse_json(Properties).resourceProviderValue == "MICROSOFT.LOGIC"
