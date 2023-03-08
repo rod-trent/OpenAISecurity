@@ -5,4 +5,4 @@ Sample Watchlist: https://github.com/rod-trent/OpenAISecurity/blob/main/Security
   <br><br>
   
  
-![image]([files://C:/Users/jzhang/Desktop/Isolated.png](https://github.com/rod-trent/OpenAISecurity/blob/main/Security/Sentinel/Detections/ChatGPT/chatgptai.png))
+![image](https://github.com/rod-trent/OpenAISecurity/blob/main/Security/Sentinel/Detections/ChatGPT/chatgptai.png)
