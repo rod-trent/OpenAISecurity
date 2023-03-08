@@ -4,4 +4,4 @@ AzureDiagnostics
 | where TimeGenerated >= ago(24h)
 | where ResourceProvider == "MICROSOFT.COGNITIVESERVICES"
 | where Category == "RequestResponse"
-| project OperationName, DurationMs, CallerIPAddress, ResourceGroup
+| project OperationName, DurationMs, CallerIPAddress, ResourceGroup, Resource
