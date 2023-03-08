@@ -1,0 +1,9 @@
+//Show who created a new Open AI Deployment
+
+AzureActivity
+| where TimeGenerated >= ago(24h)
+| where OperationNameValue == "MICROSOFT.COGNITIVESERVICES/ACCOUNTS/DEPLOYMENTS/WRITE"
+| where ActivitySubstatusValue == "Created"
+| extend Role = parse_json(tostring(parse_json(Authorization).evidence)).role
+| extend GivenName = parse_json(Claims).name
+| project CategoryValue, CallerIpAddress, Caller, GivenName, Role, ActivityStatusValue
