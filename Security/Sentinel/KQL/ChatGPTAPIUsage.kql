@@ -1,4 +1,11 @@
-//Pending...ChatGPT API Usage
+//ChatGPT API Usage
 
-AzureActivity
-| where parse_json(Properties).resourceProviderValue == "MICROSOFT.LOGIC"
+AzureDiagnostics
+| join AzureActivity on ResourceGroup
+| where Resource contains "GPT3"
+| where ResourceProvider == "MICROSOFT.LOGIC"
+| where isnotempty(Caller)
+| where Caller hassuffix "com"
+| extend PlaybookName = resource_workflowName_s
+| extend Action = Resource
+| distinct Caller, PlaybookName, Action
