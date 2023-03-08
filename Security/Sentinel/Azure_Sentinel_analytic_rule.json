@@ -1,0 +1,80 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "workspace": {
+            "type": "String"
+        }
+    },
+    "resources": [
+        {
+            "id": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/e9368c4a-e3ce-4ee6-933a-2bd3180f716d')]",
+            "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/e9368c4a-e3ce-4ee6-933a-2bd3180f716d')]",
+            "type": "Microsoft.OperationalInsights/workspaces/providers/alertRules",
+            "kind": "Scheduled",
+            "apiVersion": "2022-09-01-preview",
+            "properties": {
+                "displayName": "ChatGPT API",
+                "description": "This Analytics Rules captures anyone who is not approved to access the ChatGPT API.",
+                "severity": "Medium",
+                "enabled": true,
+                "query": "let watchlist = _GetWatchlist(\"ChatGPTPeople\")\r\n| project Users;\r\nAzureDiagnostics\r\n| join AzureActivity on ResourceGroup\r\n| where Resource contains \"GPT3\"\r\n| where ResourceProvider == \"MICROSOFT.LOGIC\"\r\n| where isnotempty(Caller)\r\n| where Caller hassuffix \"com\"\r\n| extend PlaybookName = resource_workflowName_s\r\n| extend Action = Resource\r\n| where Caller !in (watchlist)\r\n| distinct Caller, PlaybookName, Action, CallerIpAddress",
+                "queryFrequency": "PT5H",
+                "queryPeriod": "PT5H",
+                "triggerOperator": "GreaterThan",
+                "triggerThreshold": 0,
+                "suppressionDuration": "PT5H",
+                "suppressionEnabled": false,
+                "startTimeUtc": null,
+                "tactics": [
+                    "Execution",
+                    "InitialAccess"
+                ],
+                "techniques": [],
+                "alertRuleTemplateName": null,
+                "incidentConfiguration": {
+                    "createIncident": true,
+                    "groupingConfiguration": {
+                        "enabled": false,
+                        "reopenClosedIncident": false,
+                        "lookbackDuration": "PT5H",
+                        "matchingMethod": "AllEntities",
+                        "groupByEntities": [],
+                        "groupByAlertDetails": [],
+                        "groupByCustomDetails": []
+                    }
+                },
+                "eventGroupingSettings": {
+                    "aggregationKind": "SingleAlert"
+                },
+                "alertDetailsOverride": null,
+                "customDetails": {
+                    "Playbook": "PlaybookName",
+                    "Action": "Action"
+                },
+                "entityMappings": [
+                    {
+                        "entityType": "Account",
+                        "fieldMappings": [
+                            {
+                                "identifier": "Name",
+                                "columnName": "Caller"
+                            }
+                        ]
+                    },
+                    {
+                        "entityType": "IP",
+                        "fieldMappings": [
+                            {
+                                "identifier": "Address",
+                                "columnName": "CallerIpAddress"
+                            }
+                        ]
+                    }
+                ],
+                "sentinelEntitiesMappings": null,
+                "templateVersion": null
+            }
+        }
+    ]
+}
