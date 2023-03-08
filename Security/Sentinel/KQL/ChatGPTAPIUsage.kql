@@ -8,4 +8,4 @@ AzureDiagnostics
 | where Caller hassuffix "com"
 | extend PlaybookName = resource_workflowName_s
 | extend Action = Resource
-| distinct Caller, PlaybookName, Action
+| distinct Caller, PlaybookName, Action, CallerIpAddress
