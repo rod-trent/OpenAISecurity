@@ -1,0 +1,7 @@
+//Shows the operations enacted through administrative user requests 
+
+AzureDiagnostics
+| where TimeGenerated >= ago(24h)
+| where ResourceProvider == "MICROSOFT.COGNITIVESERVICES"
+| where Category == "RequestResponse"
+| project OperationName, DurationMs, CallerIPAddress, ResourceGroup
