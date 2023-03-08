@@ -1,4 +1,4 @@
-//ChatGPT API Usage
+//ChatGPT API Usage (Logic App API)
 
 AzureDiagnostics
 | join AzureActivity on ResourceGroup
