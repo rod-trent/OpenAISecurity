@@ -1,0 +1,10 @@
+//Monitor Azure Open AI failures
+
+AzureDiagnostics
+| join AzureActivity on ResourceGroup
+| where TimeGenerated >= ago(24h)
+| where ResourceProvider == "MICROSOFT.COGNITIVESERVICES"
+| where ActivityStatusValue == "Failure"
+| extend name_ = tostring(parse_json(Claims).name)
+| extend UPN = Caller
+| project ActivitySubstatus, ActivitySubstatusValue, HTTPRequest, Resource, OperationName, name_, UPN, CallerIpAddress
