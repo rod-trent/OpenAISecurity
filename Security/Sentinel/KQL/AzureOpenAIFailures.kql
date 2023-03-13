@@ -1,4 +1,4 @@
-//Monitor Azure Open AI failures
+//Monitor Azure Open AI service failures
 
 AzureDiagnostics
 | join AzureActivity on ResourceGroup
