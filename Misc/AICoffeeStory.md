@@ -1,5 +1,5 @@
 # A comedy script about AI and coffee as written by GPT-4
-## Apparently this is funny.
+## <i>Apparently this is funny</i>
 
 Scene: A coffee shop with a smart coffee machine that uses AI to make customized drinks for customers.
 
