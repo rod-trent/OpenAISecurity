@@ -1,4 +1,4 @@
-#A funny script about AI and coffee as written by GPT-4. AI has a tad bit to go when it comes to humor.
+# A funny script about AI and coffee as written by GPT-4. AI has a tad bit to go when it comes to humor.
 
 Scene: A coffee shop with a smart coffee machine that uses AI to make customized drinks for customers.
 
