@@ -1,0 +1,7 @@
+//When generating and removing Cognitive services, service principal are involved
+
+AuditLogs
+| where OperationName == "Add service principal"
+
+AuditLogs
+| where OperationName == "Hard delete service principal"
