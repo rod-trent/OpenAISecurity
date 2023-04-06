@@ -1,4 +1,4 @@
-//When generating and removing Cognitive services, service principal are involved
+//When generating and removing Cognitive services, service principals are involved
 
 AuditLogs
 | where OperationName == "Add service principal"
