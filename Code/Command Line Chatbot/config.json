@@ -1,0 +1,6 @@
+{
+    "CHATGPT_MODEL_NAME":"your deployed model name",
+    "OPENAI_API_KEY":"your endpoint API",
+    "OPENAI_API_BASE":"https://yourbaseURL.openai.azure.com/",
+    "OPENAI_API_VERSION":"2023-03-15-preview"
+}
