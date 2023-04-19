@@ -1,0 +1,7 @@
+//Maintain a Sentinel Watchlist with the deployed Azure Open AI instances. Then run the following to show who is accessing the instance. This queries against CloudAppEvents which means you need to be utilizing Defender for Cloud Apps.
+
+let OpenAI = _GetWatchlist("AzureOpenAI")
+| project Instance;
+CloudAppEvents
+| where ObjectName in (OpenAI)
+| project AccountDisplayName, IPAddress, ISP, City, CountryCode
