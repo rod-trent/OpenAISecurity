@@ -28,3 +28,5 @@ Place all the files in their own, same directory.
 ## Command line
 
 python CMDChatBot.py
+
+![alt text](rodbotcmd.png "KQL Example")
