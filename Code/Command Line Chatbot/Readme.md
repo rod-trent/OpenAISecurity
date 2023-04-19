@@ -14,6 +14,8 @@ This project is specific to sending "questions" to Azure Open AI ChatGPT (ChatGP
 
 * An Azure OpenAI Service resource with a model deployed. For more information about model deployment, see the resource deployment guide.
 
+* Install the Open AI client library: pip install openai
+
 
 ## Files
 
