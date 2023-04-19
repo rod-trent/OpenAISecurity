@@ -1,2 +1,3 @@
 # Open AI Security
-Scripts and Content for working with Open AI Security
+
+Scripts, code and content for working with Azure Open AI Security.
