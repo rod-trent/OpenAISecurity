@@ -1,0 +1,18 @@
+//Querying against AzureDiagnostics for Cognitive Services, the following is a list of operations that should be monitored
+
+AzureDiagnostics
+| join AzureActivity on ResourceGroup
+| where TimeGenerated >= ago(6h)
+| where ResourceProvider == "MICROSOFT.COGNITIVESERVICES"
+
+//Operations to monitor:
+
+| where OperationNameValue == "MICROSOFT.INSIGHTS/DIAGNOSTICSETTINGS/WRITE"
+| where OperationNameValue == "MICROSOFT.RESOURCES/SUBSCRIPTIONS/RESOURCEGROUPS/WRITE"
+| where OperationNameValue == "MICROSOFT.COGNITIVESERVICES/ACCOUNTS/DEPLOYMENTS/DELETE"
+| where OperationNameValue == "Microsoft.Advisor/recommendations/available/action"
+| where OperationNameValue == "MICROSOFT.RESOURCES/DEPLOYMENTS/WRITE"
+| where OperationNameValue == "MICROSOFT.RESOURCES/DEPLOYMENTS/DELETE"
+| where OperationNameValue == "MICROSOFT.SEARCH/SEARCHSERVICES/WRITE"
+| where OperationNameValue == "MICROSOFT.WEB/SITES/PUBLISHXML/ACTION"
+| where OperationNameValue == "MICROSOFT.COGNITIVESERVICES/ACCOUNTS/REGENERATEKEY/ACTION"
