@@ -16,6 +16,8 @@ This project is specific to sending "questions" to Azure Open AI ChatGPT (ChatGP
 
 * Install the Open AI client library: pip install openai
 
+* Other library installation requirements in the requirements.txt file
+
 
 ## Files
 
@@ -26,6 +28,8 @@ Place all the files in their own, same directory.
 * config.json - This is the file the code looks for that contains your specific API key, deployed model name, API base (endpoint), and API version. You'll need to modify this with your information.
 
 * question.json - This is the file that contains the question you want to ask. Modify this to change questions.
+
+* requirements.txt - Other library installation requirements (pip install <library> --user)
 
 ## Command line
 
