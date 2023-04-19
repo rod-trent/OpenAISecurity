@@ -19,7 +19,7 @@ This project is specific to sending "questions" to Azure Open AI ChatGPT (ChatGP
 
 Place all the files in their own, same directory.
 
-* CMDChatBot.py - This is the the Python code.
+* CMDChatBot.py - This is the main app - the Python code.
 
 * config.json - This is the file the code looks for that contains your specific API key, deployed model name, API base (endpoint), and API version. You'll need to modify this with your information.
 
