@@ -1,4 +1,4 @@
-//This KQL query uses Azure Resource Graph Explorer to locate all deployed Open AI instances so they can be added to a maintained Watchlist 
+//Use this KQL query in Azure Resource Graph Explorer to locate all deployed Open AI instances so they can be added to a maintained Watchlist 
 
 resources
 | where type contains "microsoft.cognitiveservices" and kind == "OpenAI"
