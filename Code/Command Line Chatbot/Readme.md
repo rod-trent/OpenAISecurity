@@ -13,3 +13,6 @@
 * The following Python libraries: os, requests, json
 
 * An Azure OpenAI Service resource with a model deployed. For more information about model deployment, see the resource deployment guide.
+
+
+Command line: python CMDChatBot.py
