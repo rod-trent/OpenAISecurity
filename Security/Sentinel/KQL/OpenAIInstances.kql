@@ -1,0 +1,4 @@
+//Use Azure Resource Graph Explorer for this one to locate all deployed Open AI instances to be added to a Watchlist.
+
+resources
+| where type contains "microsoft.cognitiveservices" and kind == "OpenAI"
