@@ -1,6 +1,6 @@
-#Command Line Chatbot for Azure Open AI
+# Command Line Chatbot for Azure Open AI
 
-## [b]Requirements[/b]
+## Requirements
 
 * An Azure subscription - Create one for free
 
