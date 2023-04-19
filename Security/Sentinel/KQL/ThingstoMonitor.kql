@@ -1,4 +1,4 @@
-//Querying against AzureDiagnostics for Cognitive Services, the following is a list of operations that should be monitored
+//Querying against AzureDiagnostics for Cognitive Services, the following is a growing list of operations that should be monitored
 
 AzureDiagnostics
 | join AzureActivity on ResourceGroup
