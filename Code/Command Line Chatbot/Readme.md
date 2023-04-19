@@ -15,7 +15,7 @@ This project is specific to sending "questions" to Azure Open AI ChatGPT (ChatGP
 * An Azure OpenAI Service resource with a model deployed. For more information about model deployment, see the resource deployment guide.
 
 
-[b]Files:[/b]
+**Files:**
 
 * CMDChatBot.py - This is the the Python code.
 
@@ -23,4 +23,6 @@ This project is specific to sending "questions" to Azure Open AI ChatGPT (ChatGP
 
 * question.json - This is the file that contains the question you want to ask. Modify this to change questions.
 
-Command line: python CMDChatBot.py
+**Command line:**
+
+python CMDChatBot.py
