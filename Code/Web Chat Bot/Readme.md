@@ -1,3 +1,3 @@
-# Web Chat Bot for Azure Open AI
+# Web Chatbot for Azure Open AI
 
 Coming...
