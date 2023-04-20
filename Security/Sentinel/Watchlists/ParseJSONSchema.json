@@ -1,0 +1,43 @@
+{
+    "properties": {
+        "count": {
+            "type": "integer"
+        },
+        "data": {
+            "items": {
+                "properties": {
+                    "kind": {
+                        "type": "string"
+                    },
+                    "location": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "resourceGroup": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "name",
+                    "kind",
+                    "location",
+                    "resourceGroup"
+                ],
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "facets": {
+            "type": "array"
+        },
+        "resultTruncated": {
+            "type": "string"
+        },
+        "totalRecords": {
+            "type": "integer"
+        }
+    },
+    "type": "object"
+}
