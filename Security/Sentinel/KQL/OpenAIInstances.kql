@@ -2,3 +2,4 @@
 
 resources
 | where type contains "microsoft.cognitiveservices" and kind == "OpenAI"
+| project name, kind, location, resourceGroup
