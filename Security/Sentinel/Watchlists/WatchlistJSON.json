@@ -1,0 +1,6 @@
+{
+  "Instance": "@{items('For_each')?['name']}",
+  "Location": "@{items('For_each')?['location']}",
+  "ResourceGroup": "@{items('For_each')?['resourceGroup']}",
+  "Type": "@{items('For_each')?['kind']}"
+}
