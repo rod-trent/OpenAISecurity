@@ -1,4 +1,4 @@
-//Querying against AzureDiagnostics for Cognitive Services, the following is a growing list of operations that should be monitored
+//Querying against AzureDiagnostics for Cognitive Services, the following is a growing list of operations that should be monitored:
 
 AzureDiagnostics
 | join AzureActivity on ResourceGroup
@@ -16,3 +16,16 @@ AzureDiagnostics
 | where OperationNameValue == "MICROSOFT.SEARCH/SEARCHSERVICES/WRITE"
 | where OperationNameValue == "MICROSOFT.WEB/SITES/PUBLISHXML/ACTION"
 | where OperationNameValue == "MICROSOFT.COGNITIVESERVICES/ACCOUNTS/REGENERATEKEY/ACTION"
+
+
+
+//Querying against CloudAppEvents for Cognitive Services, the following is a growing list of operations that should be monitored:
+
+CloudAppEvents
+| where TimeGenerated >= ago(6h)
+| where RawEventData.resourceProvider == "Microsoft.CognitiveServices"
+
+//Operations to monitor in CloudAppEvents:
+
+| where ActionType == "Register Microsoft.CognitiveServices"
+| where ActionType == "Write Accounts"
