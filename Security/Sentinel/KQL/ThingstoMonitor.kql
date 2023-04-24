@@ -9,6 +9,7 @@ AzureDiagnostics
 
 | where OperationNameValue == "MICROSOFT.INSIGHTS/DIAGNOSTICSETTINGS/WRITE"
 | where OperationNameValue == "MICROSOFT.RESOURCES/SUBSCRIPTIONS/RESOURCEGROUPS/WRITE"
+| where OperationNameValue == "MICROSOFT.COGNITIVESERVICES/ACCOUNTS/WRITE"
 | where OperationNameValue == "MICROSOFT.COGNITIVESERVICES/ACCOUNTS/DEPLOYMENTS/DELETE"
 | where OperationNameValue == "Microsoft.Advisor/recommendations/available/action"
 | where OperationNameValue == "MICROSOFT.RESOURCES/DEPLOYMENTS/WRITE"
