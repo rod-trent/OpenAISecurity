@@ -1,0 +1,4 @@
+//Locating Azure Open AI/Cognitive Services in the CloudAppEvents table
+
+CloudAppEvents
+| where RawEventData.resourceProvider == "Microsoft.CognitiveServices"
