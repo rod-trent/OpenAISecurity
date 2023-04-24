@@ -1,0 +1,21 @@
+<!doctype html>  
+<html lang="en">  
+<head>  
+  <meta charset="utf-8">  
+  <title>RodBot</title>  
+</head>  
+<body>  
+  <h1>Security RodBot</h1>  
+  <form method="post" action="/">  
+    <label for="question">How can I help you today?:</label>  
+    <textarea id="question" name="question" cols="50" rows="5"></textarea>
+    <button type="submit">Submit</button>  
+<br><br>
+<img src="https://github.com/rod-trent/OpenAISecurity/blob/main/Code/Web%20Chat%20Bot/clippybotback2.png?raw=true"</img>
+  </form>  
+  {% if response %}  
+  <h2>Response:</h2>  
+  <p>{{ response }}</p>  
+  {% endif %}  
+</body>  
+</html>  
