@@ -5,7 +5,7 @@ AzureDiagnostics
 | where TimeGenerated >= ago(6h)
 | where ResourceProvider == "MICROSOFT.COGNITIVESERVICES"
 
-//Operations to monitor:
+//Operations to monitor in AzureDiagnostics:
 
 | where OperationNameValue == "MICROSOFT.INSIGHTS/DIAGNOSTICSETTINGS/WRITE"
 | where OperationNameValue == "MICROSOFT.RESOURCES/SUBSCRIPTIONS/RESOURCEGROUPS/WRITE"
