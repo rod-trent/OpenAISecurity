@@ -8,8 +8,8 @@ Here’s the files that are required from the repo:
 
 * **WebChatBot.py** - this is the primary app. Place this into the app’s primary working directory.
 
-* [b]index.html[/b] - this is the HTML for the web bot interface. Place this inside a Templates folder underneath the app’s primary working directory.
+* **index.html** - this is the HTML for the web bot interface. Place this inside a Templates folder underneath the app’s primary working directory.
 
-* [b]requirements.txt[/b] - this is the file that is used to maintain the list of required libraries. This will be most important when creating a Web App deployment for Azure App Services.
+* **requirements.txt** - this is the file that is used to maintain the list of required libraries. This will be most important when creating a Web App deployment for Azure App Services.
 
-* [b]webchatconfig.json[/b] - this is the configuration file that is called from WebChatBot.py. This will need to be modified with your specific Azure Open AI information such as: model name, API key, API base URL, and GTP type.
+* **webchatconfig.json** - this is the configuration file that is called from WebChatBot.py. This will need to be modified with your specific Azure Open AI information such as: model name, API key, API base URL, and GTP type.
