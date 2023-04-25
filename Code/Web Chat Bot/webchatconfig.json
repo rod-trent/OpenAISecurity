@@ -3,5 +3,5 @@
     "OPENAI_API_KEY":"<your_API_key",
     "OPENAI_API_BASE":"your_API_base_URL",
     "OPENAI_API_VERSION":"2023-03-15-preview",
-    "OPENAI_GPT_TYPE":"gpt-35"
+    "OPENAI_GPT_TYPE":"gpt-35-turbo"
 }
