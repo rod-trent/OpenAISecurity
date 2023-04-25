@@ -1,0 +1,16 @@
+//KQL query to locate user information using Azure OpenAI Studio
+
+
+AADNonInteractiveUserSignInLogs
+| where TimeGenerated >= ago(24h)
+| where AppDisplayName == "Azure OpenAI Studio"
+| extend parse_json(LocationDetails).city
+| extend parse_json(LocationDetails).countryOrRegion
+| extend parse_json(LocationDetails).state
+| extend parse_json(tostring(parse_json(LocationDetails).geoCoordinates)).latitude
+| extend parse_json(tostring(parse_json(LocationDetails).geoCoordinates)).longitude
+| extend parse_json(DeviceDetail).browser
+| extend parse_json(DeviceDetail).displayName
+| extend parse_json(DeviceDetail).operatingSystem
+| extend parse_json(DeviceDetail).trustType
+| project UserDisplayName, UserPrincipalName, IPAddress, LocationDetails_city, LocationDetails_state, LocationDetails_countryOrRegion, LocationDetails_geoCoordinates_latitude, LocationDetails_geoCoordinates_longitude, DeviceDetail_browser, DeviceDetail_displayName, DeviceDetail_operatingSystem, DeviceDetail_trustType
