@@ -1,0 +1,7 @@
+//Query the SecurityEvent table to locate Python language activity - which could relate to Open AI development
+
+SecurityEvent
+| where TimeGenerated >=ago(24h)
+| where EventID == "4688"
+| where Process == "python.exe"
+| project SubjectDomainName, SubjectUserName, CommandLine
