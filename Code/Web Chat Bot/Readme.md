@@ -6,7 +6,7 @@ Full explanation and instructions for this code can be found at:
 
 Here’s the files that are required from the repo:
 
-* [b]WebChatBot.py[/b] - this is the primary app. Place this into the app’s primary working directory.
+* **WebChatBot.py** - this is the primary app. Place this into the app’s primary working directory.
 
 * [b]index.html[/b] - this is the HTML for the web bot interface. Place this inside a Templates folder underneath the app’s primary working directory.
 
