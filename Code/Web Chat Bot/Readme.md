@@ -1,8 +1,6 @@
 # Web Chatbot for Azure Open AI
 
-Full explanation and instructions for this code can be found at: 
-
-[Building Your own Conversational Copilot with Python, Flask, and Azure Open AI SDK](https://rodtrent.substack.com/p/building-your-own-conversational)
+Full explanation and instructions for this code can be found at: [Building Your own Conversational Copilot with Python, Flask, and Azure Open AI SDK](https://rodtrent.substack.com/p/building-your-own-conversational)
 
 Here’s the files that are required from the repo:
 
