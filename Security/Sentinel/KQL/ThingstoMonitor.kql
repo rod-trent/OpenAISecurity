@@ -30,3 +30,8 @@ CloudAppEvents
 
 | where ActionType == "Register Microsoft.CognitiveServices"
 | where ActionType == "Write Accounts"
+
+
+//Querying against AADNonInteractiveUserSignInLogs for Cognitive Services, the following is a growing list of operations that should be monitored:
+
+AADNonInteractiveUserSignInLogs
