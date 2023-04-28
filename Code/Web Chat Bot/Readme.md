@@ -6,7 +6,9 @@ Here’s the files that are required from the repo:
 
 * **WebChatBot.py** - this is the primary app. Place this into the app’s primary working directory.
 
-* **index.html** - this is the HTML for the web bot interface. Place this inside a Templates folder underneath the app’s primary working directory.
+* **index.html** - this is the HTML for the web bot interface. Place the templates folder underneath the app’s primary working directory.
+
+* **mainpage.css** - this is the CSS for the web bot interface. Place the static folder underneath the app’s primary working directory.
 
 * **requirements.txt** - this is the file that is used to maintain the list of required libraries. This will be most important when creating a Web App deployment for Azure App Services.
 
