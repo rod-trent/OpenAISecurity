@@ -1,0 +1,22 @@
+<!doctype html>  
+<html lang="en">  
+<head>  
+  <meta charset="utf-8">
+  <link rel= "stylesheet" type= "text/css" href="{{ url_for('static', filename='mainpage.css')}}">
+  <title>RodBot</title>  
+</head>  
+<body>  
+  <h1>Security RodBot</h1>
+  <img src="https://github.com/rod-trent/OpenAISecurity/blob/main/Code/Web%20Chat%20Bot/clippybotback2.png?raw=true"alt="Clippy Logo" />
+  <form method="post" action="/">  
+    <label for="question">How can I help you today?</label>  
+    <textarea id="question" name="question" cols="50" rows="5"></textarea>
+    <button type="submit">Submit</button>  
+<br><br>
+  </form>  
+  {% if response %}  
+  <h2>Response:</h2>  
+  <p>{{ response }}</p>  
+  {% endif %}  
+</body>  
+</html>  
