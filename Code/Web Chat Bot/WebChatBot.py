@@ -31,11 +31,13 @@ def generate_response(prompt):
     model_engine = chatgpt_model_name  
     response = openai.Completion.create(  
         engine=model_engine,  
-        prompt=prompt,  
-        max_tokens=150,  
-        n=1,  
-        stop=None,  
-        temperature=0.5,  
+        prompt=prompt, 
+        temperature=0.4, 
+        max_tokens=500,
+        top_p=0.45,  
+        frequency_penalty=0,
+        presence_penalty=0,
+        stop=None           
     )  
     return response.choices[0].text.strip()  
   
