@@ -1,0 +1,8 @@
+//Identifies Azure Open AI DALL-E activity
+
+AzureDiagnostics
+| join AzureActivity on ResourceGroup
+| where TimeGenerated >= ago(6h)
+| where ResourceProvider == "MICROSOFT.COGNITIVESERVICES"
+| where parse_json(properties_s).apiName == "DallE"
+| project Caller, CallerIpAddress, Resource, OperationName, ActivityStatusValue
