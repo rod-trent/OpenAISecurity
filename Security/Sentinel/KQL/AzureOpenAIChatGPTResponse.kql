@@ -1,0 +1,6 @@
+//Show when someone is accessing and getting responses from the Chat service
+
+AzureDiagnostics
+| where ResourceProvider == "MICROSOFT.COGNITIVESERVICES"
+| where OperationName == "Creates a completion for the chat message"
+| project TimeGenerated,CallerIPAddress, Resource
