@@ -1,4 +1,4 @@
-//Show when someone is accessing and getting responses from the Chat service
+//Show when someone is accessing and getting responses from the Azure OpenAI Chat service
 
 AzureDiagnostics
 | where ResourceProvider == "MICROSOFT.COGNITIVESERVICES"
