@@ -30,3 +30,5 @@ Azure Machine Learning Responsible AI documentation: https://github.com/Microsof
 
 Data, privacy, and security for Azure OpenAI Service: https://learn.microsoft.com/en-us/legal/cognitive-services/openai/data-privacy?context=%2Fazure%2Fcognitive-services%2Fopenai%2Fcontext%2Fcontext 
 
+Enterprise Azure OpenAI Advanced Logging: https://github.com/Azure-Samples/openai-python-enterprise-logging/tree/main/advanced-logging
+
