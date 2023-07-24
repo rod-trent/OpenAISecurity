@@ -1,0 +1,369 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "querypacks_AzureOpenAI_name": {
+            "defaultValue": "AzureOpenAI",
+            "type": "String"
+        }
+    },
+    "variables": {},
+    "resources": [
+        {
+            "type": "Microsoft.OperationalInsights/querypacks",
+            "apiVersion": "2019-09-01",
+            "name": "[parameters('querypacks_AzureOpenAI_name')]",
+            "location": "eastus",
+            "properties": {}
+        },
+        {
+            "type": "Microsoft.OperationalInsights/querypacks/queries",
+            "apiVersion": "2019-09-01",
+            "name": "[concat(parameters('querypacks_AzureOpenAI_name'), '/0e1d04f2-a1f3-4d6d-b0da-414857751b62')]",
+            "dependsOn": [
+                "[resourceId('Microsoft.OperationalInsights/querypacks', parameters('querypacks_AzureOpenAI_name'))]"
+            ],
+            "properties": {
+                "displayName": "Admin Requests",
+                "description": "Shows the operations enacted through administrative user requests ",
+                "body": "AzureDiagnostics\n| where TimeGenerated >= ago(24h)\n| where ResourceProvider == \"MICROSOFT.COGNITIVESERVICES\"\n| where Category == \"RequestResponse\"\n| project OperationName, DurationMs, CallerIPAddress, ResourceGroup, Resource",
+                "related": {
+                    "categories": [
+                        "security"
+                    ],
+                    "resourceTypes": [
+                        "microsoft.operationalinsights/workspaces",
+                        "microsoft.cognitiveservices/accounts"
+                    ]
+                },
+                "tags": {
+                    "labels": [
+                        "AzureOpenAI"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "Microsoft.OperationalInsights/querypacks/queries",
+            "apiVersion": "2019-09-01",
+            "name": "[concat(parameters('querypacks_AzureOpenAI_name'), '/0ec79cb4-a90a-41bc-a2e8-3914f4822eaf')]",
+            "dependsOn": [
+                "[resourceId('Microsoft.OperationalInsights/querypacks', parameters('querypacks_AzureOpenAI_name'))]"
+            ],
+            "properties": {
+                "displayName": "ChatGPT Instances",
+                "description": "Maintain a Sentinel Watchlist with the deployed Azure Open AI instances. Then run the following to show who is accessing the instance. This queries against CloudAppEvents which means you need to be utilizing Defender for Cloud Apps.",
+                "body": "let OpenAI = _GetWatchlist(\"AzureOpenAI\")\n| project Instance;\nCloudAppEvents\n| where ObjectName in (OpenAI)\n| project AccountDisplayName, IPAddress, ISP, City, CountryCode",
+                "related": {
+                    "categories": [
+                        "security"
+                    ],
+                    "resourceTypes": [
+                        "microsoft.operationalinsights/workspaces",
+                        "microsoft.cognitiveservices/accounts"
+                    ]
+                },
+                "tags": {
+                    "labels": [
+                        "AzureOpenAI"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "Microsoft.OperationalInsights/querypacks/queries",
+            "apiVersion": "2019-09-01",
+            "name": "[concat(parameters('querypacks_AzureOpenAI_name'), '/38645fbc-0efe-49bb-9192-d961e0a60fe6')]",
+            "dependsOn": [
+                "[resourceId('Microsoft.OperationalInsights/querypacks', parameters('querypacks_AzureOpenAI_name'))]"
+            ],
+            "properties": {
+                "displayName": "ChatGPT API Sentinel Detection",
+                "description": "This Analytics Rules captures anyone who is not approved to access the ChatGPT API",
+                "body": "let watchlist = _GetWatchlist(\"ChatGPTPeople\")\n| project Users;\nAzureDiagnostics\n| join AzureActivity on ResourceGroup\n| where Resource contains \"GPT3\"\n| where ResourceProvider == \"MICROSOFT.LOGIC\"\n| where isnotempty(Caller)\n| where Caller hassuffix \"com\"\n| extend PlaybookName = resource_workflowName_s\n| extend Action = Resource\n| where Caller !in (watchlist)\n| distinct Caller, PlaybookName, Action, CallerIpAddress",
+                "related": {
+                    "categories": [
+                        "security"
+                    ],
+                    "resourceTypes": [
+                        "microsoft.operationalinsights/workspaces",
+                        "microsoft.cognitiveservices/accounts"
+                    ]
+                },
+                "tags": {
+                    "labels": [
+                        "AzureOpenAI"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "Microsoft.OperationalInsights/querypacks/queries",
+            "apiVersion": "2019-09-01",
+            "name": "[concat(parameters('querypacks_AzureOpenAI_name'), '/5ee3b1b6-0c8f-4c57-b54d-ff6166b008b0')]",
+            "dependsOn": [
+                "[resourceId('Microsoft.OperationalInsights/querypacks', parameters('querypacks_AzureOpenAI_name'))]"
+            ],
+            "properties": {
+                "displayName": "Deployment",
+                "description": "Show who created a new Open AI Deployment",
+                "body": "AzureActivity\n| where TimeGenerated >= ago(24h)\n| where OperationNameValue == \"MICROSOFT.COGNITIVESERVICES/ACCOUNTS/DEPLOYMENTS/WRITE\"\n| where ActivitySubstatusValue == \"Created\"\n| extend Role = parse_json(tostring(parse_json(Authorization).evidence)).role\n| extend GivenName = parse_json(Claims).name\n| project CategoryValue, CallerIpAddress, Caller, GivenName, Role, ActivityStatusValue",
+                "related": {
+                    "categories": [
+                        "security"
+                    ],
+                    "resourceTypes": [
+                        "microsoft.operationalinsights/workspaces",
+                        "microsoft.cognitiveservices/accounts"
+                    ]
+                },
+                "tags": {
+                    "labels": [
+                        "AzureOpenAI"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "Microsoft.OperationalInsights/querypacks/queries",
+            "apiVersion": "2019-09-01",
+            "name": "[concat(parameters('querypacks_AzureOpenAI_name'), '/8fc57bd2-c25e-428d-8623-8f72f42fe648')]",
+            "dependsOn": [
+                "[resourceId('Microsoft.OperationalInsights/querypacks', parameters('querypacks_AzureOpenAI_name'))]"
+            ],
+            "properties": {
+                "displayName": "Responses",
+                "description": "Show when someone is accessing and getting responses from the Azure OpenAI Chat service",
+                "body": "AzureDiagnostics\n| where ResourceProvider == \"MICROSOFT.COGNITIVESERVICES\"\n| where OperationName == \"Creates a completion for the chat message\"\n| project TimeGenerated,CallerIPAddress, Resource\n",
+                "related": {
+                    "categories": [
+                        "security"
+                    ],
+                    "resourceTypes": [
+                        "microsoft.operationalinsights/workspaces",
+                        "microsoft.cognitiveservices/accounts"
+                    ]
+                },
+                "tags": {
+                    "labels": [
+                        "AzureOpenAI"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "Microsoft.OperationalInsights/querypacks/queries",
+            "apiVersion": "2019-09-01",
+            "name": "[concat(parameters('querypacks_AzureOpenAI_name'), '/b2925cff-0127-459c-bca9-e3b4edaaec2c')]",
+            "dependsOn": [
+                "[resourceId('Microsoft.OperationalInsights/querypacks', parameters('querypacks_AzureOpenAI_name'))]"
+            ],
+            "properties": {
+                "displayName": "Python Usage",
+                "description": "Query the SecurityEvent table to locate Python language activity - which could relate to Open AI development",
+                "body": "SecurityEvent\n| where TimeGenerated >=ago(24h)\n| where EventID == \"4688\"\n| where Process == \"python.exe\"\n| project SubjectDomainName, SubjectUserName, CommandLine",
+                "related": {
+                    "categories": [
+                        "security"
+                    ],
+                    "resourceTypes": [
+                        "microsoft.operationalinsights/workspaces",
+                        "microsoft.cognitiveservices/accounts"
+                    ]
+                },
+                "tags": {
+                    "labels": [
+                        "AzureOpenAI"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "Microsoft.OperationalInsights/querypacks/queries",
+            "apiVersion": "2019-09-01",
+            "name": "[concat(parameters('querypacks_AzureOpenAI_name'), '/bc9e774a-3b32-4443-8cc0-44b93c4b1941')]",
+            "dependsOn": [
+                "[resourceId('Microsoft.OperationalInsights/querypacks', parameters('querypacks_AzureOpenAI_name'))]"
+            ],
+            "properties": {
+                "displayName": "Service Failures",
+                "description": "Monitor Azure Open AI service failures",
+                "body": "AzureDiagnostics\n| join AzureActivity on ResourceGroup\n| where TimeGenerated >= ago(24h)\n| where ResourceProvider == \"MICROSOFT.COGNITIVESERVICES\"\n| where ActivityStatusValue == \"Failure\"\n| extend name_ = tostring(parse_json(Claims).name)\n| extend UPN = Caller\n| project ActivitySubstatus, ActivitySubstatusValue, HTTPRequest, Resource, OperationName, name_, UPN, CallerIpAddress",
+                "related": {
+                    "categories": [
+                        "security"
+                    ],
+                    "resourceTypes": [
+                        "microsoft.operationalinsights/workspaces",
+                        "microsoft.cognitiveservices/accounts"
+                    ]
+                },
+                "tags": {
+                    "labels": [
+                        "AzureOpenAI"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "Microsoft.OperationalInsights/querypacks/queries",
+            "apiVersion": "2019-09-01",
+            "name": "[concat(parameters('querypacks_AzureOpenAI_name'), '/c2eca196-2a28-440f-9995-4942a0be5316')]",
+            "dependsOn": [
+                "[resourceId('Microsoft.OperationalInsights/querypacks', parameters('querypacks_AzureOpenAI_name'))]"
+            ],
+            "properties": {
+                "displayName": "Generate Cognitive Service",
+                "description": "Generating Cognitive services, service principals are involved",
+                "body": "AuditLogs\n| where OperationName == \"Add service principal\"",
+                "related": {
+                    "categories": [
+                        "security"
+                    ],
+                    "resourceTypes": [
+                        "microsoft.operationalinsights/workspaces",
+                        "microsoft.cognitiveservices/accounts"
+                    ]
+                },
+                "tags": {
+                    "labels": [
+                        "AzureOpenAI"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "Microsoft.OperationalInsights/querypacks/queries",
+            "apiVersion": "2019-09-01",
+            "name": "[concat(parameters('querypacks_AzureOpenAI_name'), '/d3d9aa12-0fa5-4945-bba7-60603277239d')]",
+            "dependsOn": [
+                "[resourceId('Microsoft.OperationalInsights/querypacks', parameters('querypacks_AzureOpenAI_name'))]"
+            ],
+            "properties": {
+                "displayName": "Removing Cognitive Services",
+                "description": "Removing Cognitive services, service principals are involved",
+                "body": "AuditLogs\n| where OperationName == \"Hard delete service principal\"",
+                "related": {
+                    "categories": [
+                        "security"
+                    ],
+                    "resourceTypes": [
+                        "microsoft.operationalinsights/workspaces",
+                        "microsoft.cognitiveservices/accounts"
+                    ]
+                },
+                "tags": {
+                    "labels": []
+                }
+            }
+        },
+        {
+            "type": "Microsoft.OperationalInsights/querypacks/queries",
+            "apiVersion": "2019-09-01",
+            "name": "[concat(parameters('querypacks_AzureOpenAI_name'), '/e20842fa-a654-4104-954e-104f30a78641')]",
+            "dependsOn": [
+                "[resourceId('Microsoft.OperationalInsights/querypacks', parameters('querypacks_AzureOpenAI_name'))]"
+            ],
+            "properties": {
+                "displayName": "Azure OpenAI Users",
+                "description": "Users using Azure OpenAI Studio",
+                "body": "AADNonInteractiveUserSignInLogs\n| where TimeGenerated >= ago(24h)\n| where AppDisplayName == \"Azure OpenAI Studio\"\n| extend parse_json(LocationDetails).city\n| extend parse_json(LocationDetails).countryOrRegion\n| extend parse_json(LocationDetails).state\n| extend parse_json(tostring(parse_json(LocationDetails).geoCoordinates)).latitude\n| extend parse_json(tostring(parse_json(LocationDetails).geoCoordinates)).longitude\n| extend parse_json(DeviceDetail).browser\n| extend parse_json(DeviceDetail).displayName\n| extend parse_json(DeviceDetail).operatingSystem\n| extend parse_json(DeviceDetail).trustType\n| project UserDisplayName, UserPrincipalName, IPAddress, LocationDetails_city, LocationDetails_state, LocationDetails_countryOrRegion, LocationDetails_geoCoordinates_latitude, LocationDetails_geoCoordinates_longitude, DeviceDetail_browser, DeviceDetail_displayName, DeviceDetail_operatingSystem, DeviceDetail_trustType",
+                "related": {
+                    "categories": [
+                        "security"
+                    ],
+                    "resourceTypes": [
+                        "microsoft.operationalinsights/workspaces",
+                        "microsoft.cognitiveservices/accounts"
+                    ]
+                },
+                "tags": {
+                    "labels": [
+                        "AzureOpenAI"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "Microsoft.OperationalInsights/querypacks/queries",
+            "apiVersion": "2019-09-01",
+            "name": "[concat(parameters('querypacks_AzureOpenAI_name'), '/e252a69d-9bcb-41ff-9e4c-75c9a556112f')]",
+            "dependsOn": [
+                "[resourceId('Microsoft.OperationalInsights/querypacks', parameters('querypacks_AzureOpenAI_name'))]"
+            ],
+            "properties": {
+                "displayName": "DALL-E Activity",
+                "description": "Identifies Azure Open AI DALL-E activity",
+                "body": "AzureDiagnostics\n| join AzureActivity on ResourceGroup\n| where TimeGenerated >= ago(6h)\n| where ResourceProvider == \"MICROSOFT.COGNITIVESERVICES\"\n| where parse_json(properties_s).apiName == \"DallE\"\n| project Caller, CallerIpAddress, Resource, OperationName, ActivityStatusValue",
+                "related": {
+                    "categories": [
+                        "security"
+                    ],
+                    "resourceTypes": [
+                        "microsoft.operationalinsights/workspaces",
+                        "microsoft.cognitiveservices/accounts"
+                    ]
+                },
+                "tags": {
+                    "labels": [
+                        "AzureOpenAI"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "Microsoft.OperationalInsights/querypacks/queries",
+            "apiVersion": "2019-09-01",
+            "name": "[concat(parameters('querypacks_AzureOpenAI_name'), '/f0d9b4cb-f24d-4dd0-8201-564455d30be4')]",
+            "dependsOn": [
+                "[resourceId('Microsoft.OperationalInsights/querypacks', parameters('querypacks_AzureOpenAI_name'))]"
+            ],
+            "properties": {
+                "displayName": "ChatGPT Logic App API",
+                "description": "Find when someone uses the ChatGPT Logic App API",
+                "body": "AzureDiagnostics\n| join AzureActivity on ResourceGroup\n| where Resource contains \"GPT3\"\n| where ResourceProvider == \"MICROSOFT.LOGIC\"\n| where isnotempty(Caller)\n| where Caller hassuffix \"com\"\n| extend PlaybookName = resource_workflowName_s\n| extend Action = Resource\n| distinct Caller, PlaybookName, Action, CallerIpAddress",
+                "related": {
+                    "categories": [
+                        "security"
+                    ],
+                    "resourceTypes": [
+                        "microsoft.operationalinsights/workspaces",
+                        "microsoft.cognitiveservices/accounts"
+                    ]
+                },
+                "tags": {
+                    "labels": [
+                        "AzureOpenAI"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "Microsoft.OperationalInsights/querypacks/queries",
+            "apiVersion": "2019-09-01",
+            "name": "[concat(parameters('querypacks_AzureOpenAI_name'), '/f70327ba-afe2-4d85-880a-73b987710318')]",
+            "dependsOn": [
+                "[resourceId('Microsoft.OperationalInsights/querypacks', parameters('querypacks_AzureOpenAI_name'))]"
+            ],
+            "properties": {
+                "displayName": "Azure OpenAI Cognitive Services in the CloudAppEvents",
+                "description": "Locating Azure Open AI/Cognitive Services in the CloudAppEvents table",
+                "body": "CloudAppEvents\n| where RawEventData.resourceProvider == \"Microsoft.CognitiveServices\"",
+                "related": {
+                    "categories": [
+                        "security"
+                    ],
+                    "resourceTypes": [
+                        "microsoft.operationalinsights/workspaces",
+                        "microsoft.cognitiveservices/accounts"
+                    ]
+                },
+                "tags": {
+                    "labels": [
+                        "AzureOpenAI"
+                    ]
+                }
+            }
+        }
+    ]
+}
