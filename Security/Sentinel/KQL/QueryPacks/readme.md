@@ -6,5 +6,5 @@ Guidance can be found [here](https://docs.microsoft.com/en-us/azure/azure-monito
 
 You can deploy the queries from this repo to your Azure environment by deploying the following template.
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https://raw.githubusercontent.com/rod-trent/OpenAISecurity/main/Security/Sentinel/KQL/QueryPacks/azuredeploy.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Frod-trent%2FOpenAISecurity%2Fmain%2FSecurity%2FSentinel%2FKQL%2FQueryPacks%2Fazuredeploy.json)
 
