@@ -4,3 +4,4 @@
 
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-series-introduction" target="_blank">Must Learn AI Security Series: Introduction</a> - <i>Posted August 1, 2023</i><br>
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-part-1-prompt" target="_blank">Must Learn AI Security Part 1: Prompt Injection Attacks Against AI</a> - <i>Posted August 1, 2023</i><br>
+* <a href="https://rodtrent.substack.com/p/must-learn-ai-security-part-2-data" target="_blank">Must Learn AI Security Part 2: Data Poisoning Attacks Against AI</a> - <i>Posted August 8, 2023</i><br>
