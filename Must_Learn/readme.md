@@ -1,6 +1,6 @@
 # Must Learn AI Security - the blog series and the book<br>
 
-This repository contains the code, queries, and eBook (coming) included as part of the Must Learn AI Security series. The series is a continuing effort to discuss and educate about how to monitor and secure Artificial Intelligence.
+This repository contains the content, code, queries, and eBook (coming) included as part of the Must Learn AI Security series. The series is a continuing effort to discuss and educate about how to monitor and secure Artificial Intelligence.
 
 The eBook (PDF) is updated whenever changes are made or new parts of the series are released. Get the book: (coming...)
 
