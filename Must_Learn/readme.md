@@ -9,5 +9,5 @@ The eBook (PDF) is updated whenever changes are made or new parts of the series 
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-part-2-data" target="_blank">Must Learn AI Security Part 2: Data Poisoning Attacks Against AI</a> - <i>Posted August 8, 2023</i><br>
 
 
-
+</br>
 <p align="center"><img src="https://github.com/rod-trent/OpenAISecurity/blob/main/Must_Learn/Series_Images/Must%20Learn%20AI%20Security%20Small.png?raw=true" alt="Must Learn AI Security"></center></p>
