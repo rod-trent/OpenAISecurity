@@ -5,7 +5,7 @@ This repository contains the content, code, queries, and eBook (coming) included
 
 The eBook (PDF) is updated whenever changes are made or new parts of the series are released. Get the book: https://github.com/rod-trent/OpenAISecurity/tree/main/Must_Learn/Book_Version
 
-<b><h2>Table of Contents</h2></b>
+<b><h1>Table of Contents</h1></b>
 The following are links to the entire series so far:
 <br><br>
 
