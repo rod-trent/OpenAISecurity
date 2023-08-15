@@ -1,4 +1,5 @@
 # Must Learn AI Security - the blog series and the book<br>
+<p align="right"><img src="https://raw.githubusercontent.com/rod-trent/OpenAISecurity/main/Must_Learn/Series_Images/Must%20Learn%20AI%20Security%20Small.png" alt="Must Learn AI Security"></center></p>
 
 This repository contains the content, code, queries, and eBook (coming) included as part of the Must Learn AI Security series. The series is a continuing effort to discuss and educate about how to monitor and secure Artificial Intelligence.
 
