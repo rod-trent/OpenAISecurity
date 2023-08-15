@@ -4,6 +4,10 @@ This repository contains the content, code, queries, and eBook (coming) included
 
 The eBook (PDF) is updated whenever changes are made or new parts of the series are released. Get the book: https://github.com/rod-trent/OpenAISecurity/tree/main/Must_Learn/Book_Version
 
+<b><h2>Table of Contents</h2></b>
+The following are links to the entire series so far:
+<br><br>
+
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-series-introduction" target="_blank">Must Learn AI Security Series: Introduction</a> - <i>Posted August 1, 2023</i><br>
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-part-1-prompt" target="_blank">Must Learn AI Security Part 1: Prompt Injection Attacks Against AI</a> - <i>Posted August 1, 2023</i><br>
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-part-2-data" target="_blank">Must Learn AI Security Part 2: Data Poisoning Attacks Against AI</a> - <i>Posted August 8, 2023</i><br>
