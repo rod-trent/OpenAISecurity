@@ -15,5 +15,15 @@ The following are links to the entire series so far:
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-part-3-adversarial" target="_blank">Must Learn AI Security Part 3: Adversarial Attacks Against AI</a> - <i>Posted August 15, 2023</i><br>
 
 
+<b><h1>Table of Contents</h1></b>
+<br><br>
+Q. Is there a downloadable version of the series?
+<br>
+A. Yes. There is an eBook version of the series that gets updated everytime a new chatper is posted. The eBook is located here: https://github.com/rod-trent/OpenAISecurity/tree/main/Must_Learn/Book_Version
+<br><br>
+Q. Will there be a physical copy of the book? 
+<br>
+A. Yes. Just like was done for the Must Learn KQL series, when this series is complete, a physical copy (hardcover and softcover) will be available for purchase from Amazon. And, also like the Must Learn KQL version, all proceeds go to <a href="https://www.stjude.org/" target="_blank">St. Jude Children's Research Hospital</a>St. Jude Children's Research Hospital. 
+<br><br>
 </br></br></br>
 <p align="center"><img src="https://github.com/rod-trent/OpenAISecurity/blob/main/Must_Learn/Series_Images/Must%20Learn%20AI%20Security%20Small.png?raw=true" alt="Must Learn AI Security"></center></p>
