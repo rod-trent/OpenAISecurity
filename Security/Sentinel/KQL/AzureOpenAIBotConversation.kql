@@ -1,0 +1,8 @@
+//Retrieves information about a Chatbot conversation (web app), including client IP, bytes passed between client and chatobt, and how long the response took.
+//This is a start. The IP and max response bytes can be used to identify potential anomalous behavior. For example, the same IP over a brief period of time
+//resulting in more than expected response bytes.
+
+AppServiceHTTPLogs
+| where CsUriStem == "/conversation"
+| extend Response_Bytes = ScBytes, Input_Bytes = CsBytes, TimeTaken, Client_IP = CIp, App = CsHost
+| project TimeGenerated, App, Client_IP, Input_Bytes, Response_Bytes, TimeTaken
