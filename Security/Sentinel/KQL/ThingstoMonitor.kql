@@ -36,3 +36,14 @@ CloudAppEvents
 //Querying against AADNonInteractiveUserSignInLogs for Cognitive Services, the following is a growing list of operations that should be monitored:
 
 AADNonInteractiveUserSignInLogs
+
+//After enabling a Diagnostic Setting for a Web App running a custom Copilot, the following tables are availble:
+AppServiceConsoleLogs - Standard output and standard error
+AppServiceHTTPLogs - Web server logs
+AppServiceEnvironmentPlatformLogs - App Service Environment: scaling, configuration changes, and status logs
+AppServiceAuditLogs - Login activity via FTP and Kudu
+AppServiceFileAuditLogs - File changes made to the site content; only available for Premium tier and above
+AppServiceAppLogs - Application logs
+AppServiceIPSecAuditLogs - Requests from IP Rules
+AppServicePlatformLogs - Container operation logs
+AppServiceAntivirusScanAuditLogs - Anti-virus scan logs using Microsoft Defender for Cloud; only available for Premium tier
