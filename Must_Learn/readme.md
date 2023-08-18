@@ -16,7 +16,6 @@ The following are links to the entire series so far:
 
 
 <b><h1>Frequently Asked Questions (FAQ)</h1></b>
-<br><br>
 Q. Is there a downloadable version of the series?
 <br>
 A. Yes. There is an eBook version of the series that gets updated everytime a new chatper is posted. The eBook is located here: https://github.com/rod-trent/OpenAISecurity/tree/main/Must_Learn/Book_Version
