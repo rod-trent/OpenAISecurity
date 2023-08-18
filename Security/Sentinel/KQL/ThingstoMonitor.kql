@@ -47,3 +47,13 @@ AADNonInteractiveUserSignInLogs
 * AppServiceIPSecAuditLogs - Requests from IP Rules
 * AppServicePlatformLogs - Container operation logs
 * AppServiceAntivirusScanAuditLogs - Anti-virus scan logs using Microsoft Defender for Cloud; only available for Premium tier
+
+//More tables:
+* AzureActivity
+* AzureMetrics
+* IdentityLogonEvents
+* CloudAppEvents
+* BehaviorAnalytics
+* AADNonInteractiveUserSignInLogs
+* SigninLogs
+
