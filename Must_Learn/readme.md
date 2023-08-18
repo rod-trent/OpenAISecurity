@@ -15,7 +15,7 @@ The following are links to the entire series so far:
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-part-3-adversarial" target="_blank">Must Learn AI Security Part 3: Adversarial Attacks Against AI</a> - <i>Posted August 15, 2023</i><br>
 
 
-<b><h1>Table of Contents</h1></b>
+<b><h1>Frequently Asked Questions (FAQ)</h1></b>
 <br><br>
 Q. Is there a downloadable version of the series?
 <br>
