@@ -23,7 +23,7 @@ A. Yes. There is an eBook version of the series that gets updated everytime a ne
 <br><br>
 Q. Will there be a physical copy of the book? 
 <br>
-A. Yes. Just like was done for the Must Learn KQL series, when this series is complete, a physical copy (hardcover and softcover) will be available for purchase from Amazon. And, also like the Must Learn KQL version, all proceeds go to <a href="https://www.stjude.org/" target="_blank">St. Jude Children's Research Hospital</a>St. Jude Children's Research Hospital. 
+A. Yes. Just like was done for the <a href="https://aka.ms/MustLearnKQL" target="_blank">Must Learn KQL</a>series, when this series is complete, a physical copy (hardcover and softcover) will be available for purchase from Amazon. And, also like the Must Learn KQL version, all proceeds go to <a href="https://www.stjude.org/" target="_blank">St. Jude Children's Research Hospital</a>. 
 <br><br>
 </br></br></br>
 <p align="center"><img src="https://github.com/rod-trent/OpenAISecurity/blob/main/Must_Learn/Series_Images/Must%20Learn%20AI%20Security%20Small.png?raw=true" alt="Must Learn AI Security"></center></p>
