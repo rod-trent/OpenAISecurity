@@ -2,7 +2,7 @@ Made by AI: A Modern Monty Python Skit Sketch
 
 I was recently working on a demo using my own Azure OpenAI Copilot and I asked it to write “a modern Monty Python skit script.” The following is what my own Copilot produced and thought it too good to not share. Maybe at a conference in the near future, I can get some attendees to help act this out for YouTube.
 
-Title: "The Influencer Café"
+<b><h1>Title: "The Influencer Café"</h1></b>
 [Scene: A trendy café, with minimalist décor, succulents on the tables, and a neon sign saying "But first, coffee" on the wall. A group of Monty Python members are seated together, all wearing hipster clothing, such as oversized glasses, beanies, and skinny jeans. They are all holding smartphones and sipping on various trendy beverages.]
 
 Eric: (looking up from his phone) Ugh, I can't seem to gain any new followers on InstaSnapBook! I've been posting avocado toast pictures for days!
