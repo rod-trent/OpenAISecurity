@@ -1,0 +1,12 @@
+//For a Chatbot, set an access threshold of 30 times in 5 hours and provide the IP addresses of offenders.
+
+let timeframe = 5h;
+//Set a threshold from an IP address within 5 hours which we want to deem the actions suspicious.
+let access_threshold = 30; 
+//Make a list of IPs above the threshold.
+AppServiceHTTPLogs
+| where TimeGenerated >= ago(timeframe)    
+| extend Response_Bytes = ScBytes, Input_Bytes = CsBytes, TimeTaken, Client_IP = CIp , App = CsHost
+| where Client_IP != "127.0.0.1"
+| summarize count() by Client_IP
+| where count_ >  access_threshold
