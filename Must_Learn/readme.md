@@ -3,6 +3,8 @@
 
 This repository contains the content, code, queries, and eBook (coming) included as part of the Must Learn AI Security series. The series is a continuing effort to discuss and educate about how to monitor and secure Artificial Intelligence.
 
+The series has it's own shortlink. To return back here, just remember the easy URL: https://aka.ms/MustLearnAISecurity
+
 The eBook (PDF) is updated whenever changes are made or new parts of the series are released. Get the book: https://github.com/rod-trent/OpenAISecurity/tree/main/Must_Learn/Book_Version
 
 <b><h1>Table of Contents</h1></b>
