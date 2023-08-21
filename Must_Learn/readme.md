@@ -18,6 +18,22 @@ The following are links to the entire series so far:
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-part-2-data" target="_blank">Must Learn AI Security Part 2: Data Poisoning Attacks Against AI</a> - <i>Posted August 8, 2023</i><br>
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-part-3-adversarial" target="_blank">Must Learn AI Security Part 3: Adversarial Attacks Against AI</a> - <i>Posted August 15, 2023</i><br>
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-part-4-trojan" target="_blank">Must Learn AI Security Part 4: Trojan Attacks Against AI</a> - <i>Posted August 21, 2023</i><br>
+* Model inversion: Revealing sensitive training data by analyzing the model.
+* Membership inference: Figuring out if a specific data point was in the training set.
+* Model stealing: Copying the functionality of a proprietary model without access to its parameters.
+* Hyperparameter attacks: Tampering with the parameters that control the learning process.
+* Backdoor attacks: Sneaking in hidden functionality that can be triggered later.
+* Denial of service: Overwhelming an AI system with requests to make it unresponsive.
+* Reward hacking: Exploiting a reinforcement learning model's reward function.
+* Generative attacks: Creating fake data to deceive or manipulate.
+* Inference attacks: Extracting sensitive information from AI-generated outputs.
+* Misinformation: Spreading fake or misleading information through AI-generated content.
+* Impersonation: Using AI-generated content to mimic a real person.
+* Social engineering: Manipulating people through AI-generated content.
+* AI bias exploitation: Taking advantage of biases present in AI models.
+* AI-generated deepfakes: Creating realistic fake videos or audio clips.
+* Text-based attacks: Generating malicious or misleading text using AI.
+* Watermark removal: Using AI to remove watermarks from protected content.
 
 <br><br>
 
