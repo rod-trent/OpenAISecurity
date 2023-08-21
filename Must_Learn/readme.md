@@ -1,4 +1,4 @@
-# Must Learn AI Security - the blog series and the book<br>
+# Must Learn AI Security - the blog series, the book, the store<br>
 <p align="right"><img src="https://github.com/rod-trent/OpenAISecurity/blob/main/Must_Learn/Series_Images/MustLearnAISecuritySmallSmall.png" alt="Must Learn AI Security"></center></p>
 
 This repository contains the content, code, queries, and eBook (coming) included as part of the Must Learn AI Security series. The series is a continuing effort to discuss and educate about how to monitor and secure Artificial Intelligence.
@@ -6,6 +6,8 @@ This repository contains the content, code, queries, and eBook (coming) included
 The series has it's own shortlink. To return back here, just remember the easy URL: https://aka.ms/MustLearnAISecurity
 
 The eBook (PDF) is updated whenever changes are made or new parts of the series are released. Get the book: https://github.com/rod-trent/OpenAISecurity/tree/main/Must_Learn/Book_Version
+
+Love the series so much you want a coffee mug? There's now a <b>merch store</b> where all proceeds go to <a href="https://www.stjude.org/" target="_blank">St. Jude Children's Research Hospital.</a> Check it out! <b><a href="https://must-learn-kql.creator-spring.com" target="_blank">MUST LEARN STORE</a></b>
 
 <b><h1>Table of Contents</h1></b>
 The following are links to the entire series so far:
