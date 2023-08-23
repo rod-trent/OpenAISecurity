@@ -51,5 +51,9 @@ Q. How many chapters will there be?
 <br>
 A. I'm not sure yet. I have a general sense of the length and what needs to be covered, but since this is an ongoing effort and this space is constantly evolving and changing, only time will tell.
 <br><br>
+Q. How do I know I have the most current version of the eBook?
+<br>
+A. Compare the versioning information on the eBook's download page to the versioning information inside the eBook.
+<br><br>
 </br></br></br>
 <p align="center"><img src="https://github.com/rod-trent/OpenAISecurity/blob/main/Must_Learn/Series_Images/Must%20Learn%20AI%20Security%20Small.png?raw=true" alt="Must Learn AI Security"></center></p>
