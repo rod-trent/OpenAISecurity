@@ -19,7 +19,7 @@ The following are links to the entire series so far:
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-part-3-adversarial" target="_blank">Must Learn AI Security Part 3: Adversarial Attacks Against AI</a> - <i>Posted August 15, 2023</i><br>
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-part-4-trojan" target="_blank">Must Learn AI Security Part 4: Trojan Attacks Against AI</a> - <i>Posted August 21, 2023</i><br>
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-part-5-evasion" target="_blank">Must Learn AI Security Part 5: Evasion Attacks Against AI</a> - <i>Posted August 22, 2023</i><br>
-* Model inversion: Revealing sensitive training data by analyzing the model. -  <i>Expected August 23, 2023</i><br>
+* <a href="https://rodtrent.substack.com/p/must-learn-ai-security-part-6-model" target="_blank">Must Learn AI Security Part 6: Model Inversion Attacks Against AI</a> - <i>Posted August 23, 2023</i><br>
 * Membership inference: Figuring out if a specific data point was in the training set.
 * Model stealing: Copying the functionality of a proprietary model without access to its parameters.
 * Hyperparameter attacks: Tampering with the parameters that control the learning process.
