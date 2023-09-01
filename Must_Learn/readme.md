@@ -47,7 +47,7 @@ A. Yes. There is an eBook version of the series that gets updated everytime a ne
 <br><br>
 Q. Will there be a physical copy of the book? 
 <br>
-A. Yes. Just like was done for the <a href="https://aka.ms/MustLearnKQL" target="_blank">Must Learn KQL</a>series, when this series is complete, a physical copy (hardcover and softcover) will be available for purchase from Amazon. And, also like the Must Learn KQL version, all proceeds go to <a href="https://www.stjude.org/" target="_blank">St. Jude Children's Research Hospital</a>. 
+A. Yes. Just like was done for the <a href="https://aka.ms/MustLearnKQL" target="_blank">Must Learn KQL </a>series, when this series is complete, a physical copy (hardcover and softcover) will be available for purchase from Amazon. And, also like the Must Learn KQL version, all proceeds go to <a href="https://www.stjude.org/" target="_blank">St. Jude Children's Research Hospital</a>. 
 <br><br>
 Q. How many chapters will there be?
 <br>
