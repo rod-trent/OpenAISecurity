@@ -7,6 +7,8 @@ The series has it's own shortlink. To return back here, just remember the easy U
 
 The eBook (PDF) is updated whenever changes are made or new parts of the series are released. Get the book: https://github.com/rod-trent/OpenAISecurity/tree/main/Must_Learn/Book_Version
 
+Fan of Amazon Kindle? As each chapter is released it is also available on Kindle Vella, the serialized book service from Amazon. Read more: https://rodtrent.substack.com/p/must-learn-ai-security-on-kindle
+
 Love the series so much you want a coffee mug? There's now a <b>merch store</b> where all proceeds go to <a href="https://www.stjude.org/" target="_blank">St. Jude Children's Research Hospital.</a> Check it out! <b><a href="https://must-learn-kql.creator-spring.com" target="_blank">MUST LEARN STORE</a></b>
 
 <b><h1>Table of Contents</h1></b>
