@@ -12,4 +12,5 @@ See the following:
 
 * Send to Kindle - amazon.com. https://www.amazon.com/sendtokindle.
 * Learn About Sending Documents to Your Kindle Library. https://www.amazon.com/gp/help/customer/display.html%3FnodeId%3DG5WYD9SAF7PGXRNA.
+* As each chapter is released it is also available on Kindle Vella, the serialized book service from Amazon. Read more: https://rodtrent.substack.com/p/must-learn-ai-security-on-kindle
 
