@@ -24,7 +24,7 @@ The following are links to the entire series so far:
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-part-6-model" target="_blank">Must Learn AI Security Part 6: Model Inversion Attacks Against AI</a> - <i>Posted August 23, 2023</i><br>
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-part-7-membership" target="_blank">Must Learn AI Security Part 7: Membership Inference Attacks Against AI</a> - <i>Posted August 24, 2023</i><br>
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-part-8-model" target="_blank">Must Learn AI Security Part 8: Model Stealing Attacks Against AI</a> - <i>Posted September 5, 2023</i><br>
-* Hyperparameter attacks: Tampering with the parameters that control the learning process.
+* Hyperparameter attacks: Tampering with the parameters that control the learning process. <i>expected September 7, 2023</i>
 * Backdoor attacks: Sneaking in hidden functionality that can be triggered later.
 * Denial of service: Overwhelming an AI system with requests to make it unresponsive.
 * Reward hacking: Exploiting a reinforcement learning model's reward function.
