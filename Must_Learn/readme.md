@@ -26,7 +26,7 @@ The following are links to the entire series so far:
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-part-8-model" target="_blank">Must Learn AI Security Part 8: Model Stealing Attacks Against AI</a> - <i>Posted September 5, 2023</i><br>
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-part-9-hyperparameter" target="_blank">Must Learn AI Security Part 9: Hyperparameter Attacks Against AI</a> - <i>Posted September 7, 2023</i><br>
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-compendium" target="_blank">Must Learn AI Security Compendium 1: AI Cyber Attacks - The Rising Threat to Security</a> - <i>Posted September 7, 2023</i><br>
-* Backdoor attacks: Sneaking in hidden functionality that can be triggered later.  - <i>expected September 8, 2023</i>
+* <a href="https://rodtrent.substack.com/p/must-learn-ai-security-part-10-backdoor" target="_blank">Must Learn AI Security Part 10: Backdoor Attacks Against AI</a> - <i>Posted September 8, 2023</i><br>
 * Denial of service: Overwhelming an AI system with requests to make it unresponsive. - <i>expected September 11, 2023</i>
 * Reward hacking: Exploiting a reinforcement learning model's reward function.
 * Generative attacks: Creating fake data to deceive or manipulate.
