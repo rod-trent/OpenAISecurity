@@ -42,6 +42,7 @@ The following are links to the entire series so far:
 * AI bias exploitation: Taking advantage of biases present in AI models. <i>expected September 29, 2023</i>
 * AI-generated deepfakes: Creating realistic fake videos or audio clips. <i>expected October 2, 2023</i>
 * Text-based attacks: Generating malicious or misleading text using AI. <i>expected October 3, 2023</i>
+* Must Learn AI Security Compendium 6: Generative Automation <i>expected October 4, 2023</i>
 * Watermark removal: Using AI to remove watermarks from protected content. <i>expected October 6, 2023</i>
 
 <br><br>
