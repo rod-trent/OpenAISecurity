@@ -35,6 +35,7 @@ The following are links to the entire series so far:
 * Inference attacks: Extracting sensitive information from AI-generated outputs.
 * Misinformation: Spreading fake or misleading information through AI-generated content.
 * Must Learn AI Security Compendium 4: Leveraging Generative AI for Cybersecurity Defense <i>expected September 19, 2023</i>
+* Must Learn AI Security Compendium 5: The Rise of AI in the IT Sector <i>expected September 20, 2023</i>
 * Impersonation: Using AI-generated content to mimic a real person.
 * Social engineering: Manipulating people through AI-generated content.
 * AI bias exploitation: Taking advantage of biases present in AI models.
