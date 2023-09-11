@@ -31,11 +31,11 @@ The following are links to the entire series so far:
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-compendium-73e" target="_blank">Must Learn AI Security Compendium 2: Generative AI vs. Machine Learning</a> - <i>Posted September 11, 2023</i><br>
 * Must Learn AI Security Compendium 3: Exploring the Different Types of AI Technology <i>expected September 12, 2023</i>
 * Reward hacking: Exploiting a reinforcement learning model's reward function. <i>expected September 13, 2023</i>
-* Generative attacks: Creating fake data to deceive or manipulate.
-* Inference attacks: Extracting sensitive information from AI-generated outputs.
-* Misinformation: Spreading fake or misleading information through AI-generated content.
+* Generative attacks: Creating fake data to deceive or manipulate. <i>expected September 15, 2023</i>
+* Inference attacks: Extracting sensitive information from AI-generated outputs. <i>expected September 18, 2023</i>
 * Must Learn AI Security Compendium 4: Leveraging Generative AI for Cybersecurity Defense <i>expected September 19, 2023</i>
 * Must Learn AI Security Compendium 5: The Rise of AI in the IT Sector <i>expected September 20, 2023</i>
+* Misinformation: Spreading fake or misleading information through AI-generated content.
 * Must Learn AI Security Compendium 6: Ensuring Trust and Ethical Practices <i>expected September 26, 2023</i>
 * Impersonation: Using AI-generated content to mimic a real person.
 * Social engineering: Manipulating people through AI-generated content.
