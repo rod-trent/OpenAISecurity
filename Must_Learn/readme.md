@@ -35,14 +35,14 @@ The following are links to the entire series so far:
 * Inference attacks: Extracting sensitive information from AI-generated outputs. <i>expected September 18, 2023</i>
 * Must Learn AI Security Compendium 4: Leveraging Generative AI for Cybersecurity Defense <i>expected September 19, 2023</i>
 * Must Learn AI Security Compendium 5: The Rise of AI in the IT Sector <i>expected September 20, 2023</i>
-* Misinformation: Spreading fake or misleading information through AI-generated content.
+* Misinformation: Spreading fake or misleading information through AI-generated content. <i>expected September 22, 2023</i>
+* Impersonation: Using AI-generated content to mimic a real person. <i>expected September 22, 2023</i>
 * Must Learn AI Security Compendium 6: Ensuring Trust and Ethical Practices <i>expected September 26, 2023</i>
-* Impersonation: Using AI-generated content to mimic a real person.
-* Social engineering: Manipulating people through AI-generated content.
-* AI bias exploitation: Taking advantage of biases present in AI models.
-* AI-generated deepfakes: Creating realistic fake videos or audio clips.
-* Text-based attacks: Generating malicious or misleading text using AI.
-* Watermark removal: Using AI to remove watermarks from protected content.
+* Social engineering: Manipulating people through AI-generated content. <i>expected September 28, 2023</i>
+* AI bias exploitation: Taking advantage of biases present in AI models. <i>expected September 29, 2023</i>
+* AI-generated deepfakes: Creating realistic fake videos or audio clips. <i>expected October 2, 2023</i>
+* Text-based attacks: Generating malicious or misleading text using AI. <i>expected October 3, 2023</i>
+* Watermark removal: Using AI to remove watermarks from protected content. <i>expected October 6, 2023</i>
 
 <br><br>
 
