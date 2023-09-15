@@ -31,7 +31,7 @@ The following are links to the entire series so far:
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-compendium-73e" target="_blank">Must Learn AI Security Compendium 2: Generative AI vs. Machine Learning</a> - <i>Posted September 11, 2023</i><br>
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-compendium-d86" target="_blank">Must Learn AI Security Compendium 3: Exploring the Different Types of AI Technology</a> - <i>Posted September 12, 2023</i><br>
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-part-12-reward" target="_blank">Must Learn AI Security Part 12: Reward Hacking Attacks Against AI</a> - <i>Posted September 13, 2023</i><br>
-* Generative attacks: Creating fake data to deceive or manipulate. <i>expected September 15, 2023</i>
+* <a href="https://rodtrent.substack.com/p/must-learn-ai-security-part-13-generative" target="_blank">Must Learn AI Security Part 13: Generative Attacks Against AI</a> - <i>Posted September 15, 2023</i><br>
 * Inference attacks: Extracting sensitive information from AI-generated outputs. <i>expected September 18, 2023</i>
 * Must Learn AI Security Compendium 4: Leveraging Generative AI for Cybersecurity Defense <i>expected September 19, 2023</i>
 * Must Learn AI Security Compendium 5: The Rise of AI in the IT Sector <i>expected September 20, 2023</i>
