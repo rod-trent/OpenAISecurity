@@ -36,7 +36,7 @@ The following are links to the entire series so far:
 * Must Learn AI Security Compendium 4: Leveraging Generative AI for Cybersecurity Defense <i>expected September 19, 2023</i>
 * Must Learn AI Security Compendium 5: The Rise of AI in the IT Sector <i>expected September 20, 2023</i>
 * Misinformation: Spreading fake or misleading information through AI-generated content. <i>expected September 22, 2023</i>
-* Impersonation: Using AI-generated content to mimic a real person. <i>expected September 22, 2023</i>
+* Impersonation: Using AI-generated content to mimic a real person. <i>expected September 25, 2023</i>
 * Must Learn AI Security Compendium 6: Ensuring Trust and Ethical Practices <i>expected September 26, 2023</i>
 * Social engineering: Manipulating people through AI-generated content. <i>expected September 28, 2023</i>
 * AI bias exploitation: Taking advantage of biases present in AI models. <i>expected September 29, 2023</i>
