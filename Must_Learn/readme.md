@@ -33,6 +33,7 @@ The following are links to the entire series so far:
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-part-12-reward" target="_blank">Must Learn AI Security Part 12: Reward Hacking Attacks Against AI</a> - <i>Posted September 13, 2023</i><br>
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-part-13-generative" target="_blank">Must Learn AI Security Part 13: Generative Attacks Against AI</a> - <i>Posted September 15, 2023</i><br>
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-part-14-inference" target="_blank">Must Learn AI Security Part 14: Inference Attacks Against AI</a> - <i>Posted September 18, 2023</i><br>
+* <a href="https://rodtrent.substack.com/p/must-learn-ai-security-compendium-794" target="_blank">Must Learn AI Security Compendium 4: Leveraging Generative AI for Cybersecurity Defense</a> - <i>Posted September 19, 2023</i><br>
 * Must Learn AI Security Compendium 4: Leveraging Generative AI for Cybersecurity Defense <i>expected September 19, 2023</i>
 * Must Learn AI Security Compendium 5: The Rise of AI in the IT Sector <i>expected September 20, 2023</i>
 * Misinformation: Spreading fake or misleading information through AI-generated content. <i>expected September 22, 2023</i>
