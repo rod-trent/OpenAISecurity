@@ -47,6 +47,7 @@ The following are links to the entire series so far:
 * Must Learn AI Security Compendium 8: The CISO Guide to Generative AI Security <i>expected October 10, 2023</i>
 * Must Learn AI Security Compendium 9: The Argument for Safe AI <i>expected October 11, 2023</i>
 * Must Learn AI Security Compendium 10: Challenges of Enhancing AI Language Models with External Knowledge <i>expected October 13, 2023</i>
+* Must Learn AI Security Compendium 11: Threat Modeling AI/ML Systems <i>expected October 16, 2023</i>
 
 <br><br>
 
