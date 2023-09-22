@@ -46,6 +46,7 @@ The following are links to the entire series so far:
 * Watermark removal: Using AI to remove watermarks from protected content. <i>expected October 6, 2023</i>
 * Must Learn AI Security Compendium 8: The CISO Guide to Generative AI Security <i>expected October 10, 2023</i>
 * Must Learn AI Security Compendium 9: The Argument for Safe AI <i>expected October 11, 2023</i>
+* Must Learn AI Security Compendium 10: Challenges of Enhancing AI Language Models with External Knowledge <i>expected October 13, 2023</i>
 
 <br><br>
 
