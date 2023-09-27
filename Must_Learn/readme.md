@@ -48,6 +48,7 @@ The following are links to the entire series so far:
 * Must Learn AI Security Compendium 9: The Argument for Safe AI <i>expected October 11, 2023</i>
 * Must Learn AI Security Compendium 10: Challenges of Enhancing AI Language Models with External Knowledge <i>expected October 13, 2023</i>
 * Must Learn AI Security Compendium 11: Threat Modeling AI/ML Systems <i>expected October 16, 2023</i>
+* Must Learn AI Security Compendium 12: Red Teaming Strategies for Safeguarding Large Language Models and Their Applications <i>expected October 17, 2023</i>
 
 <br><br>
 
