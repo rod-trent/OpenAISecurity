@@ -39,7 +39,7 @@ The following are links to the entire series so far:
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-part-16-impersonation" target="_blank">Must Learn AI Security Part 16: Impersonation Attacks Against AI</a> - <i>Posted September 25, 2023</i><br>
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-compendium-cd6" target="_blank">Must Learn AI Security Compendium 6: Ensuring Trust and Ethical Practices</a> - <i>Posted September 25, 2023</i><br>
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-part-17-social" target="_blank">Must Learn AI Security Part 17: Social Engineering Attacks Against AI</a> - <i>Posted September 28, 2023</i><br>
-* AI bias exploitation: Taking advantage of biases present in AI models. <i>expected September 29, 2023</i>
+* <a href="https://rodtrent.substack.com/p/must-learn-ai-security-part-18-bias" target="_blank">Must Learn AI Security Part 18: Bias Exploitation Attacks Against AI</a> - <i>Posted September 28, 2023</i><br>
 * AI-generated deepfakes: Creating realistic fake videos or audio clips. <i>expected October 2, 2023</i>
 * Text-based attacks: Generating malicious or misleading text using AI. <i>expected October 3, 2023</i>
 * Must Learn AI Security Compendium 7: What is Generative Automation? <i>expected October 4, 2023</i>
