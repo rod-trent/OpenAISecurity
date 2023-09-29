@@ -53,6 +53,7 @@ The following are links to the entire series so far:
 * Blurring or masking attacks: <i>expected October 19, 2023</i>
 * Copy-move attacks: <i>expected October 23, 2023</i>
 * Image processing attacks: <i>expected October 24, 2023</i>
+* Summary Chapter: <i>expected whenever the series is finished</i>
 
 <br><br>
 
