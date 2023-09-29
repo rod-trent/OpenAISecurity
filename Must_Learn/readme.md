@@ -49,6 +49,10 @@ The following are links to the entire series so far:
 * Must Learn AI Security Compendium 10: Challenges of Enhancing AI Language Models with External Knowledge <i>expected October 13, 2023</i>
 * Must Learn AI Security Compendium 11: Threat Modeling AI/ML Systems <i>expected October 16, 2023</i>
 * Must Learn AI Security Compendium 12: Red Teaming Strategies for Safeguarding Large Language Models and Their Applications <i>expected October 17, 2023</i>
+* Machine learning attacks: <i>expected October 18, 2023</i>
+* Blurring or masking attacks: <i>expected October 19, 2023</i>
+* Copy-move attacks: <i>expected October 23, 2023</i>
+* Image processing attacks: <i>expected October 24, 2023</i>
 
 <br><br>
 
