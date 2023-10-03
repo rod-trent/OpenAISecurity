@@ -53,7 +53,7 @@ The following are links to the entire series so far:
 * Blurring or masking attacks: <i>expected October 19, 2023</i>
 * Copy-move attacks: <i>expected October 23, 2023</i>
 * Image processing attacks: <i>expected October 24, 2023</i>
-* Must Learn AI Security Compendium 13: Zero Trust for AI <i>expected October 15, 2023</i>
+* Must Learn AI Security Compendium 13: Zero Trust for AI <i>expected October 25, 2023</i>
 * Summary Chapter: <i>expected whenever the series is finished</i>
 
 <br><br>
