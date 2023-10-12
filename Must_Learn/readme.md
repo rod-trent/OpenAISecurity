@@ -46,7 +46,7 @@ The following are links to the entire series so far:
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-part-21-watermark" target="_blank">Must Learn AI Security Part 21: Watermark Removal Attacks Against AI</a> - <i>Posted October 5, 2023</i><br>
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-compendium-30f" target="_blank">Must Learn AI Security Compendium 8: The CISO Guide to Generative AI Security</a> - <i>Posted October 10, 2023</i><br>
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-compendium-e82" target="_blank">Must Learn AI Security Compendium 9: The Argument for Safe AI</a> - <i>Posted October 11, 2023</i><br>
-* Must Learn AI Security Compendium 10: Challenges of Enhancing AI Language Models with External Knowledge <i>expected October 12, 2023</i>
+* <a href="https://rodtrent.substack.com/p/must-learn-ai-security-compendium-b5d" target="_blank">Must Learn AI Security Compendium 10: Challenges of Enhancing AI Language Models with External Knowledge</a> - <i>Posted October 11, 2023</i><br>
 * Must Learn AI Security Compendium 11: Threat Modeling AI/ML Systems <i>expected October 16, 2023</i>
 * Must Learn AI Security Compendium 12: Red Teaming Strategies for Safeguarding Large Language Models and Their Applications <i>expected October 17, 2023</i>
 * Machine learning attacks: <i>expected October 18, 2023</i>
