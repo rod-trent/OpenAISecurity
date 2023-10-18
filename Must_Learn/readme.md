@@ -49,6 +49,7 @@ The following are links to the entire series so far:
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-compendium-b5d" target="_blank">Must Learn AI Security Compendium 10: Challenges of Enhancing AI Language Models with External Knowledge</a> - <i>Posted October 12, 2023</i><br>
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-compendium-b6b" target="_blank">Must Learn AI Security Compendium 11: Threat Modeling AI/ML Systems</a> - <i>Posted October 16, 2023</i><br>
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-compendium-030" target="_blank">Must Learn AI Security Compendium 12: Red Teaming Strategies for Safeguarding Large Language Models and Their Applications</a> - <i>Posted October 17, 2023</i><br>
+* <a href="https://rodtrent.substack.com/p/must-learn-ai-security-part-22-machine" target="_blank">Must Learn AI Security Part 22: Machine Learning Attacks Against AI</a> - <i>Posted October 18, 2023</i><br>
 * Machine learning attacks: <i>expected October 18, 2023</i>
 * Blurring or masking attacks: <i>expected October 19, 2023</i>
 * Copy-move attacks: <i>expected October 23, 2023</i>
