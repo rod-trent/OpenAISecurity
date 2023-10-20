@@ -1,0 +1,5 @@
+//Azure OpenAI Content Safety: Manipulating the whitelist and blocklist terms
+
+AzureDiagnostics
+| where OperationName contains "Whitelist" or OperationName contains "Blocklist"
+| distinct CallerIPAddress
