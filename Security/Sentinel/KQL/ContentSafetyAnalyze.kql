@@ -1,4 +1,4 @@
-//Content Safety Service: Detect analyzing text or images
+//Azure OpenAI Content Safety Service: Detect analyzing text or images
 
 AzureDiagnostics
 | where parse_json(properties_s).apiName == "Content Safety Service"
