@@ -1,0 +1,6 @@
+//Content Safety Service: Detect analyzing text or images
+
+AzureDiagnostics
+| where parse_json(properties_s).apiName == "Content Safety Service"
+| where OperationName == "Analyze Image" or OperationName == "Analyze Text"
+| distinct CallerIPAddress
