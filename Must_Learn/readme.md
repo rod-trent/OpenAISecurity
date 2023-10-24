@@ -53,7 +53,7 @@ The following are links to the entire series so far:
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-part-23-blurring" target="_blank">Must Learn AI Security Part 23: Blurring or Masking Attacks Against AI</a> - <i>Posted October 19, 2023</i><br>
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-part-24-copy" target="_blank">Must Learn AI Security Part 24: Copy-move Attacks Against AI</a> - <i>Posted October 23, 2023</i><br>
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-compendium-1fb" target="_blank">Must Learn AI Security Compendium 13: Zero Trust for AI <i>expected</a> - <i>Posted October 24, 2023</i><br>
-* Summary Chapter: <i>expected whenever the series is finished</i>
+* Summary Chapter: <i>expected October 25, 2023</i>
 <br><br>
 
 <b><h1>Frequently Asked Questions (FAQ)</h1></b>
