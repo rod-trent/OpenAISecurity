@@ -73,6 +73,58 @@
         {
             "type": "Microsoft.OperationalInsights/querypacks/queries",
             "apiVersion": "2019-09-01",
+            "name": "[concat(parameters('querypacks_AzureOpenAI_name'), '/15ed73c4-3514-49d3-843b-f20f6cc2fc39')]",
+            "dependsOn": [
+                "[resourceId('Microsoft.OperationalInsights/querypacks', parameters('querypacks_AzureOpenAI_name'))]"
+            ],
+            "properties": {
+                "displayName": "ContentSafetyAnalyze",
+                "description": "Azure OpenAI Content Safety Service: Detect analyzing text or images",
+                "body": "AzureDiagnostics\r\n| where parse_json(properties_s).apiName == \"Content Safety Service\"\r\n| where OperationName == \"Analyze Image\" or OperationName == \"Analyze Text\"\r\n| distinct CallerIPAddress",
+                "related": {
+                    "categories": [
+                        "security"
+                    ],
+                    "resourceTypes": [
+                        "microsoft.operationalinsights/workspaces"
+                    ]
+                },
+                "tags": {
+                    "labels": [
+                        "AzureOpenAI"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "Microsoft.OperationalInsights/querypacks/queries",
+            "apiVersion": "2019-09-01",
+            "name": "[concat(parameters('querypacks_AzureOpenAI_name'), '/2a16ac98-6cbd-4575-a783-1f393fa67a18')]",
+            "dependsOn": [
+                "[resourceId('Microsoft.OperationalInsights/querypacks', parameters('querypacks_AzureOpenAI_name'))]"
+            ],
+            "properties": {
+                "displayName": "AzureOpenAIBotConversation",
+                "description": "Retrieves information about a Chatbot conversation (web app), including client IP, bytes passed between client and chatbot, and how long the response took.",
+                "body": "AppServiceHTTPLogs\r\n| where CsUriStem == \"/conversation\"\r\n| extend Response_Bytes = ScBytes, Input_Bytes = CsBytes, TimeTaken, Client_IP = CIp, App = CsHost\r\n| project TimeGenerated, App, Client_IP, Input_Bytes, Response_Bytes, TimeTaken",
+                "related": {
+                    "categories": [
+                        "security"
+                    ],
+                    "resourceTypes": [
+                        "microsoft.operationalinsights/workspaces"
+                    ]
+                },
+                "tags": {
+                    "labels": [
+                        "AzureOpenAI"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "Microsoft.OperationalInsights/querypacks/queries",
+            "apiVersion": "2019-09-01",
             "name": "[concat(parameters('querypacks_AzureOpenAI_name'), '/38645fbc-0efe-49bb-9192-d961e0a60fe6')]",
             "dependsOn": [
                 "[resourceId('Microsoft.OperationalInsights/querypacks', parameters('querypacks_AzureOpenAI_name'))]"
@@ -100,6 +152,32 @@
         {
             "type": "Microsoft.OperationalInsights/querypacks/queries",
             "apiVersion": "2019-09-01",
+            "name": "[concat(parameters('querypacks_AzureOpenAI_name'), '/5ce95153-fd0f-44da-87e1-6ad0335834d0')]",
+            "dependsOn": [
+                "[resourceId('Microsoft.OperationalInsights/querypacks', parameters('querypacks_AzureOpenAI_name'))]"
+            ],
+            "properties": {
+                "displayName": "Content-Whitelist-Blocklist",
+                "description": "Azure OpenAI Content Safety: Manipulating the whitelist and blocklist terms",
+                "body": "AzureDiagnostics\r\n| where OperationName contains \"Whitelist\" or OperationName contains \"Blocklist\"\r\n| distinct CallerIPAddress",
+                "related": {
+                    "categories": [
+                        "security"
+                    ],
+                    "resourceTypes": [
+                        "microsoft.operationalinsights/workspaces"
+                    ]
+                },
+                "tags": {
+                    "labels": [
+                        "AzureOpenAI"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "Microsoft.OperationalInsights/querypacks/queries",
+            "apiVersion": "2019-09-01",
             "name": "[concat(parameters('querypacks_AzureOpenAI_name'), '/5ee3b1b6-0c8f-4c57-b54d-ff6166b008b0')]",
             "dependsOn": [
                 "[resourceId('Microsoft.OperationalInsights/querypacks', parameters('querypacks_AzureOpenAI_name'))]"
@@ -115,6 +193,32 @@
                     "resourceTypes": [
                         "microsoft.operationalinsights/workspaces",
                         "microsoft.cognitiveservices/accounts"
+                    ]
+                },
+                "tags": {
+                    "labels": [
+                        "AzureOpenAI"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "Microsoft.OperationalInsights/querypacks/queries",
+            "apiVersion": "2019-09-01",
+            "name": "[concat(parameters('querypacks_AzureOpenAI_name'), '/7cdf3a73-c16d-42f2-91e8-df0c046d494e')]",
+            "dependsOn": [
+                "[resourceId('Microsoft.OperationalInsights/querypacks', parameters('querypacks_AzureOpenAI_name'))]"
+            ],
+            "properties": {
+                "displayName": "AzureOpenAIChatGPTResponse",
+                "description": "Show when someone is accessing and getting responses from the Azure OpenAI Chat service",
+                "body": "AzureDiagnostics\r\n| where ResourceProvider == \"MICROSOFT.COGNITIVESERVICES\"\r\n| where OperationName == \"Creates a completion for the chat message\"\r\n| project TimeGenerated,CallerIPAddress, Resource",
+                "related": {
+                    "categories": [
+                        "security"
+                    ],
+                    "resourceTypes": [
+                        "microsoft.operationalinsights/workspaces"
                     ]
                 },
                 "tags": {
