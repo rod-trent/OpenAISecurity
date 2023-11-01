@@ -2,7 +2,7 @@
 
 Query packs are an Azure Resource Manager object that act as a container to store queries. This provides a way to save KQL queries and share them across multiple workspaces, or to the community.
 
-Guidance can be found [here](https://docs.microsoft.com/en-us/azure/azure-monitor/logs/query-packs)
+Guidance can be found here:  [How to Export and Import KQL Query Packs](https://rodtrent.substack.com/p/how-to-export-and-import-kql-query)
 
 You can deploy the queries from this repo to your Azure environment by deploying the following template.
 
