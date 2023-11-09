@@ -53,7 +53,8 @@ The following are links to the entire series so far:
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-part-23-blurring" target="_blank">Must Learn AI Security Part 23: Blurring or Masking Attacks Against AI</a> - <i>Posted October 19, 2023</i><br>
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-part-24-copy" target="_blank">Must Learn AI Security Part 24: Copy-move Attacks Against AI</a> - <i>Posted October 23, 2023</i><br>
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-compendium-1fb" target="_blank">Must Learn AI Security Compendium 13: Zero Trust for AI</a> - <i>Posted October 24, 2023</i><br>
-* <a href="https://rodtrent.substack.com/p/must-learn-ai-security-securing-ai" target="_blank">Must Learn AI Security Epilogue: Securing AI is a Three-Pronged Approach</a> - <i>Posted October 25, 2023</i><br>
+* <a href="https://rodtrent.substack.com/p/must-learn-ai-security-compendium-1fb" target="_blank">Must Learn AI Security Compendium 14: Securing On-prem LLMs</a> - <i>Posted November 9, 2023</i><br>
+* <a href="https://rodtrent.substack.com/p/must-learn-ai-security-compendium-9eb" target="_blank">Must Learn AI Security Epilogue: Securing AI is a Three-Pronged Approach</a> - <i>Posted October 25, 2023</i><br>
 <br><br>
 
 <b><h1>Frequently Asked Questions (FAQ)</h1></b>
