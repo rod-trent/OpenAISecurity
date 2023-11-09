@@ -2,7 +2,7 @@
 
 This is the book version of the <b>Must Learn AI Security series</b>. It will be updated each time a new part of the series is released.
 
-**Latest release info:** *Book release ver. 0.547, October 25, 2023 8:00am EST*
+**Latest release info:** *Book release ver. 0.557, November 9, 2023 3:30pm PST*
 
 Have a Kindle reader?
 
