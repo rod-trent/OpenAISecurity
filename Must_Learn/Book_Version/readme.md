@@ -6,7 +6,7 @@ This is the book version of the <b>Must Learn AI Security series</b>. It will be
 
 Want a physical copy of the book? Paperback and hardcover editions are available from Amazon: https://amzn.to/3MZGimw 
 
-**All Amazon proceeds go to <a href="https://www.stjude.org/" target="_blank">St. Jude</a>**
+<i>**All Amazon proceeds go to <a href="https://www.stjude.org/" target="_blank">St. Jude</a>**</i>
 
 Have a Kindle reader?
 
