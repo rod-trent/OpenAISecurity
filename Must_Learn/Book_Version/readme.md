@@ -6,6 +6,8 @@ This is the book version of the <b>Must Learn AI Security series</b>. It will be
 
 Want a physical copy of the book? Paperback and hardcover editions are available from Amazon: https://amzn.to/3MZGimw 
 
+**All Amazon proceeds go to <a href="https://www.stjude.org/" target="_blank">St. Jude</a>**
+
 Have a Kindle reader?
 
 You can send documents to your Kindle library on your Kindle devices and Kindle app using the "Send to Kindle" feature. You can upload documents through the web, an authorized email address, the Kindle app for iOS and Android devices, or a Send to Kindle application if available. All documents sent through Send to Kindle are protected with end-to-end encryption. 
