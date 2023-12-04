@@ -57,6 +57,8 @@ The following are links to the entire series so far:
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-compendium-c6a" target="_blank">Must Learn AI Security Compendium 15: Securing AI Endpoints</a> - <i>Posted November 13, 2023</i><br>
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-part-25-sponge" target="_blank">Must Learn AI Security Part 25: Sponge Attacks Against AI</a> - <i>Posted November 27, 2023</i><br>
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-compendium-240" target="_blank">Must Learn AI Security Compendium 16: Shadow AI</a> - <i>Posted November 29, 2023</i><br>
+* <a href="https://rodtrent.substack.com/p/must-learn-ai-security-compendium-db8" target="_blank">Must Learn AI Security Compendium 17: Cognitive Security
+Out of Band 17</a> - <i>Posted December 4, 2023</i><br>
 * <a href="https://rodtrent.substack.com/p/must-learn-ai-security-securing-ai" target="_blank">Must Learn AI Security Epilogue: Securing AI is a Three-Pronged Approach</a> - <i>Posted October 25, 2023</i><br>
 <br><br>
 
