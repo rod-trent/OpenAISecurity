@@ -9,6 +9,8 @@ The eBook (PDF) is updated whenever changes are made or new parts of the series 
 
 Fan of Amazon Kindle? As each chapter is released it is also available on Kindle Vella, the serialized book service from Amazon. Read more: https://rodtrent.substack.com/p/must-learn-ai-security-on-kindle
 
+Want a physical copy of the book? Both paperback and hardcover editions also available through Amazon: https://amzn.to/3UxDZLP
+
 Love the series so much you want a coffee mug? There's now a <b>merch store</b> where all proceeds go to <a href="https://www.stjude.org/" target="_blank">St. Jude Children's Research Hospital.</a> Check it out! <b><a href="https://must-learn-kql.creator-spring.com" target="_blank">MUST LEARN STORE</a></b>
 
 <b><h1>Table of Contents</h1></b>
@@ -69,7 +71,7 @@ A. Yes. There is an eBook version of the series that gets updated everytime a ne
 <br><br>
 Q. Will there be a physical copy of the book? 
 <br>
-A. Yes. Just like was done for the <a href="https://aka.ms/MustLearnKQL" target="_blank">Must Learn KQL </a>series, when this series is complete, a physical copy (hardcover and softcover) will be available for purchase from Amazon. And, also like the Must Learn KQL version, all proceeds go to <a href="https://www.stjude.org/" target="_blank">St. Jude Children's Research Hospital</a>. 
+A. Yes. Just like was done for the <a href="https://aka.ms/MustLearnKQL" target="_blank">Must Learn KQL </a>series, a physical copy (hardcover and paperback) is available for purchase from Amazon (https://amzn.to/3UxDZLP). And, also like the Must Learn KQL version, all proceeds go to <a href="https://www.stjude.org/" target="_blank">St. Jude Children's Research Hospital</a>. 
 <br><br>
 Q. How many chapters will there be?
 <br>
